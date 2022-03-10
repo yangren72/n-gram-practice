@@ -41,9 +41,13 @@ function preload() {
 function setup() {
   createCanvas(660, 340);
   background(0);
-  //textAlign(CENTER);
-  textSize(20);
+  
   textFont("Courier");
+  fill(245);
+  textSize(45);
+  text("One Hundred Years", 30, 90 );
+  textSize(20);
+  text("click to start", 32, 120 );
 
   txtCon = RiTa.untokenize(txt);
   txtCon = txtCon.replace(/�/g, "");
