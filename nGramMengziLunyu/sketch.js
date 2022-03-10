@@ -13,11 +13,17 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(500, 240);
+  createCanvas(500, 230);
   background(0);
   textAlign(CENTER);
-  textSize(20);
+  
   textFont(font);
+  textSize(45);
+  fill(245);
+  text("論孟",width/2,height/2-5);
+  textSize(20);
+  text("click to start",width/2,height/2+20);
+  
   let txttxt2 = txt + txt2;
   txtCon = RiTa.untokenize(txttxt2);
   txtCon = txtCon.replace(/\s/g, "");
